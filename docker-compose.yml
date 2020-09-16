@@ -6,6 +6,7 @@ services:
       context: elasticsearch/
       args:
         ELK_VERSION: $ELK_VERSION
+        SUDACHI_PLUGIN_VER: $SUDACHI_PLUGIN_VER
     volumes:
       - type: bind
         source: ./elasticsearch/config/elasticsearch.yml
